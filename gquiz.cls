@@ -29,7 +29,7 @@
 detect-all= true,
 }%
 \RequirePackage{booktabs}
-\RequirePackage{tikz}
+% \RequirePackage{tikz}
 \usepackage[nohdr]{mathexam}
 
 \RequirePackage{ifthen}
