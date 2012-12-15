@@ -6,9 +6,10 @@
 \IfFileExists{nag.sty}{\RequirePackage[l2tabu, orthodox]{nag}}{}
 
 \RequirePackage{amsmath}
-\RequirePackage{kmath}
-\RequirePackage{tgbonum}
+\IfFileExists{kmath.sty}{\RequirePackage{kmath}
 \renewcommand{\alpha}{\alphaup}
+}{}
+\IfFileExists{tgbonum.sty}{\RequirePackage{tgbonum}}{}
 % \RequirePackage{kpfonts}
 % \RequirePackage[oldstylemath,oldstylenums]{kpfonts}
 % \RequirePackage[sc]{mathpazo}
@@ -17,14 +18,13 @@
 % \IfFileExists{mathpazo.sty}{\RequirePackage[osf,sc]{mathpazo}}{}
 \IfFileExists{helvet.sty}{\RequirePackage[scaled=0.90]{helvet}}{}
 \IfFileExists{beramono.sty}{\RequirePackage[scaled=0.85]{beramono}}{}
-% \RequirePackage[T1]{fontenc}
+\RequirePackage[T1]{fontenc}
 \RequirePackage{textcomp}
 
 
-\RequirePackage[T1]{fontenc}
 \RequirePackage{graphicx}
 \RequirePackage[top=1.0in,bottom=0.8in,left=1.0in,right=1.0in]{geometry}
-\RequirePackage{microtype}
+\IfFileExists{microtype.sty}{\RequirePackage{microtype}}{}
 \RequirePackage{fancybox}
 \RequirePackage{paralist}
 \RequirePackage{siunitx}
