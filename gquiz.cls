@@ -2,6 +2,9 @@
 
 \LoadClass{article}
 
+\IfFileExists{fixltx2e.sty}{\usepackage{fixltx2e}}{}
+\IfFileExists{nag.sty}{\RequirePackage[l2tabu, orthodox]{nag}}{}
+
 \RequirePackage{amsmath}
 \RequirePackage{kmath}
 \RequirePackage{tgbonum}
