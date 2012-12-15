@@ -75,9 +75,10 @@ awarded for partial answers.
 \newcommand{\quizheader}{%
 \nameline
 \begin{center}{\headersize
-  \theclass~---~\theexam\\
-    \thedate\\
-  }
+    \theclass~---~\theexam
+
+    \thedate
+}
 \headerbox
 \end{center}
 }
@@ -86,6 +87,7 @@ awarded for partial answers.
 \AtBeginDocument{%
 \thispagestyle{plain}%
 \quizheader%
+
 }
 
 
